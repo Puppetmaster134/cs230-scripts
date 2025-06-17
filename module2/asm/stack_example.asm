@@ -8,7 +8,7 @@ addi $10, $0, 3
 addi $11, $0, 4
 addi $12, $0, 5
 
-; Move the stack pointer "up" by 5 words
+; Move the stack pointer "down" by 5 words
 addi $30, $30, -20
 
 sw $8, 0($30)
@@ -17,7 +17,7 @@ sw $10, 8($30)
 sw $11, 12($30)
 sw $12, 16($30)
 
-; Move the stack pointer "down" by 4 words
+; Move the stack pointer "up" by 4 words
 addi $30, $30, 16
 
 ; Load in the value at the tip of the stack to register $13
